@@ -11,11 +11,11 @@
 		B6554F252556BF800090930F /* Items.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6554F242556BF800090930F /* Items.storyboard */; };
 		B6554F282556BF8D0090930F /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6554F272556BF8D0090930F /* ItemsViewController.swift */; };
 		B6554F2C2556C3740090930F /* QiitaItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6554F2B2556C3740090930F /* QiitaItemModel.swift */; };
+		B67BE5692661E5480009FC89 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B67BE5682661E5480009FC89 /* Alamofire */; };
 		B6BBDF5C2556A47B005D516C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BBDF5B2556A47B005D516C /* AppDelegate.swift */; };
 		B6BBDF602556A47B005D516C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BBDF5F2556A47B005D516C /* LoginViewController.swift */; };
 		B6BBDF652556A47C005D516C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BBDF642556A47C005D516C /* Assets.xcassets */; };
 		B6BBDF682556A47C005D516C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BBDF662556A47C005D516C /* LaunchScreen.storyboard */; };
-		B6BBDF742556AA7A005D516C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B6BBDF732556AA7A005D516C /* Alamofire */; };
 		B6BBDF772556AAB6005D516C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BBDF762556AAB6005D516C /* API.swift */; };
 		B6BBDF7B2556AAF6005D516C /* QiitaAccessTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BBDF7A2556AAF6005D516C /* QiitaAccessTokenModel.swift */; };
 		B6BBDF842556AC25005D516C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BBDF832556AC25005D516C /* Login.storyboard */; };
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6BBDF742556AA7A005D516C /* Alamofire in Frameworks */,
+				B67BE5692661E5480009FC89 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +149,7 @@
 			);
 			name = SampleQiita;
 			packageProductDependencies = (
-				B6BBDF732556AA7A005D516C /* Alamofire */,
+				B67BE5682661E5480009FC89 /* Alamofire */,
 			);
 			productName = SampleQiita;
 			productReference = B6BBDF582556A47B005D516C /* SampleQiita.app */;
@@ -179,7 +179,7 @@
 			);
 			mainGroup = B6BBDF4F2556A47B005D516C;
 			packageReferences = (
-				B6BBDF722556AA7A005D516C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B67BE5672661E5480009FC89 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = B6BBDF592556A47B005D516C /* Products */;
 			projectDirPath = "";
@@ -409,20 +409,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B6BBDF722556AA7A005D516C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		B67BE5672661E5480009FC89 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.0;
+				minimumVersion = 5.4.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B6BBDF732556AA7A005D516C /* Alamofire */ = {
+		B67BE5682661E5480009FC89 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B6BBDF722556AA7A005D516C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = B67BE5672661E5480009FC89 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */

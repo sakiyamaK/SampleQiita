@@ -27,19 +27,15 @@ final class LoginViewController: UIViewController {
     else {
       return
     }
-    API.shared.postAccessToken(code: code) { accessToken, error  in
-      if let _error = error {
-        //TODO: エラー表示
-        return
-      }
-      guard let _accessToken = accessToken,
-            let vc = UIStoryboard.init(name: "Items", bundle: nil).instantiateInitialViewController()
-      else {
-        //TODO: エラー表示
-        return
-      }
-      UserDefaults.standard.qiitaAccessToken = _accessToken.token
-      self.navigationController?.pushViewController(vc, animated: true)
+    API.shared.postAccessToken(code: code) { result in
+        switch result {
+        case .success(let accessToken):
+            UserDefaults.standard.qiitaAccessToken = accessToken.token
+            let vc = UIStoryboard.init(name: "Items", bundle: nil).instantiateInitialViewController()!
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .failure(let error):
+            print(error)
+        }
     }
   }
 }
